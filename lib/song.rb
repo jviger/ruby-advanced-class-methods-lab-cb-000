@@ -59,5 +59,6 @@ class Song
     song = self.create
     song.name = song_details[1]
     song.artist_name = song_details[0]
-    song 
+    song
+  end
 end
