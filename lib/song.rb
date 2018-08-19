@@ -5,12 +5,15 @@ class Song
   def self.all
     @@all
   end
-
+  
+  def save
+    self.class.all << self
+  end
   
   def self.create
     song = Song.new
-    self.
-    song
+    self.save
+    
   end
 
 end
