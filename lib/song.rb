@@ -53,7 +53,7 @@ class Song
     song
   end
   
-  def self.create_from_filename(name)
+  def self.create_from_filename(filename)
     song_details = []
     song_details = filename.split(/ - |\./)
     song = self.create
