@@ -52,4 +52,12 @@ class Song
     song.artist_name = song_details[0]
     song
   end
+  
+  def self.create_from_filename(name)
+    song_details = []
+    song_details = filename.split(/ - |\./)
+    song = self.create
+    song.name = song_details[1]
+    song.artist_name = song_details[0]
+    song 
 end
