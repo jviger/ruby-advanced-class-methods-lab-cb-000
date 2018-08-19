@@ -49,5 +49,5 @@ class Song
     song_details = filename.split(/ - |\./)
     self.new_by_name(song_details[1])
     self.artist_name = song_details[0]
-    
+  end
 end
